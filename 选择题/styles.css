@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.question-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.options label {
+    display: block;
+    margin: 2px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options label:hover,
+.options input[type="checkbox"]:checked + label {
+    background-color: #e0e0e0;
+}
+
+input[type="file"] {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#feedback {
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: color 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 为不同类型的反馈设置不同的颜色 */
+.feedback-correct {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+}
+
+.feedback-wrong {
+    color: #a94442;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+}
+
+.feedback-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border: 1px solid #faebcc;
+}
+
+/* 添加媒体查询以改善小屏幕设备的响应式设计 */
+@media (max-width: 640px) {
+    .question-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

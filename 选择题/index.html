@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择题练习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="file" id="file-input" accept=".json">
+    <div class="question-container">
+        <div id="question">1. 下列选项中哪个是正确的？</div>
+        <div class="options" id="options">
+            <!-- 选项将在这里动态插入 -->
+        </div>
+        <button onclick="lastQuestion()" id="last-btn" class="">上一题</button>
+        <button onclick="submitAnswer()">提交答案</button>
+        <button onclick="nextQuestion()" id="next-btn" class="hidden">下一题</button>
+        <div id="feedback"></div>
+        <div id="explanation" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
